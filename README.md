@@ -1,2 +1,2 @@
 # Some scripts for biochemical engineering
-<img src="example.png" width="500"/>
+<p style="text-align: center"><img src="EnzymeKinetics/example.png" width="500"/></P>
