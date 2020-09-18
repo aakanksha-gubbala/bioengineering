@@ -104,6 +104,3 @@ def DNA_RNA_Protein(DNA):
         rna += [RNA[x:x + 3]]
     protein = ''.join(RNA_to_protein(rna))
     return print("\nDNA: 5'-%s-3'" % DNA, "\nRNA: 5'-%s-3'" % RNA, "\nProtein: -%s" % protein)
-
-
-DNA_RNA_Protein('GGCCCTGCT')
