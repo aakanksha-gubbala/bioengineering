@@ -1,6 +1,7 @@
 
 function [] = glycolysis(t, x)
 % X = Glu and Y = Glu-6-P and Z = Fructo-6-P and W = Fructo-1,6-P
+% Take the following initial concentrations:
 % [Glu]0 = 12.874, [Glu-6-P]0 = 1
 % [Fructo-6-P]0 = 0, [Fructo-1, 6-P]0 = 0
 % [P1]0 = 0, [P2]0 = 0
