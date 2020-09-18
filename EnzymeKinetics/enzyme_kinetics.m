@@ -1,6 +1,7 @@
 
 function [] = enzyme_kinetics(t, x)
 % Enzyme kinetics - the Michaelis Menten Model for reversible enzyme-substrate and enzyme-product reactions
+% Arbritary values of constants are taken.
     function [f] = dXdT(t, x)
         S = x(1);
         P = x(2);
