@@ -26,16 +26,16 @@ function [] = glycolysis(t, x)
         vfmax3 = 140.482;
         vbmax3 = 140.282;
         
-        kFruc6P4 = 1;
-        K = 1;
-        vmax4 = 1;
+        kFruc6P4 = 0.021;
+        K = 0.15;
+        vmax4 = 44.287;
         
         k2 = 2.26;
         k5 = 6.04662;
         k6 = 68.48;
         k7 = 3.21;
         k8f = 432.8;
-        k8b = 1;
+        k8b = 133.33;
         
         
         rs1 = vmax1*X*ATP/(1 + ATP/kATP1 + X/kGlu1);
@@ -58,12 +58,13 @@ function [] = glycolysis(t, x)
         dP2dt = rs5;
         f = [dXdt; dYdt; dZdt; dWdt; dATPdt; dADPdt; dAMPdt; dP1dt; dP2dt]; 
     end
-[t,y] = ode15s(@dGlydT,t, x);
+[t,y] = ode45(@dGlydT,t, x);
 figure
-plot(t, y,'linewidth', 1)
+plot(t, y,'linewidth', 1.5)
 legend({'[Glu]', '[Glu-6-P]', '[Fructo-6-P]','[Fructo-1,6-P]','[ATP]', '[ADP]', '[AMP]','[$P_1$]', '[$P_2$]'},'interpreter', 'latex','Location','bestoutside')
 legend('boxoff')
 title("Glycolysis Reactions")
 xlabel("t (min)")
+ylim([0 14])
 ylabel("Concentration (mM)")
 end
