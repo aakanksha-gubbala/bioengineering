@@ -1,6 +1,7 @@
 
 function [] = coupledEnzymaticReactions(t, x)
-% Take [Glu]0 = 12.87, [Glu-6-P = Y]0 = 1.5, [ATP]= 2.5, [ADP] = 1.2
+% Only step 1 and step 6 of glycolysis is studied here.
+% Take the following initial values -  [Glu]0 = 12.87, [Glu-6-P = Y]0 = 1.5, [ATP]= 2.5, [ADP] = 1.2
     function [f] = dXdT(t, x)
         X = x(1);
         Y = x(2);
