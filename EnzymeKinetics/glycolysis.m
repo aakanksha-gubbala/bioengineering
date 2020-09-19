@@ -1,5 +1,6 @@
 
 function [] = glycolysis(t, x)
+% Values are given for E.coli
 % X = Glu and Y = Glu-6-P and Z = Fructo-6-P and W = Fructo-1,6-P
 % Take the following initial concentrations:
 % [Glu]0 = 12.874, [Glu-6-P]0 = 1
