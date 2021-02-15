@@ -1,8 +1,6 @@
-# Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/IND/GBRC199/2020, complete genome
 # LOCUS       MT635858               29800 bp    RNA     linear   VRL 18-JUN-2020
 # DEFINITION  Severe acute respiratory syndrome coronavirus 2 isolate
 #             SARS-CoV-2/human/IND/GBRC199/2020, complete genome.
-# ACCESSION   MT635858
 
 from collections import Counter
 
@@ -104,6 +102,3 @@ def DNA_RNA_Protein(DNA):
         rna += [RNA[x:x + 3]]
     protein = ''.join(RNA_to_protein(rna))
     return print("\nDNA: 5'-%s-3'" % DNA, "\nRNA: 5'-%s-3'" % RNA, "\nProtein: -%s" % protein)
-
-
-DNA_RNA_Protein('GGCCCTGCT')
