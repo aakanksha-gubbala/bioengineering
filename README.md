@@ -1,1 +1,1 @@
-\<img src="EnzymeKinetics/example.png" width="500"/>
+<img src="EnzymeKinetics/example.png" width="500"/>
